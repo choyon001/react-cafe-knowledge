@@ -1,6 +1,6 @@
 import { BsBookmarkStarFill } from "react-icons/bs";
-export default function Blog({blog,handleBookmarks}) {
-    const {title,cover_img,author_name,published_date,reading_time,hashtags,author_img} = blog;
+export default function Blog({blog,handleBookmarks,handleReadingtime}) {
+    const {id,title,cover_img,author_name,published_date,reading_time,hashtags,author_img} = blog;
   return (
     <div className='mb-4'>
         <img src={cover_img} alt="not found" srcset="" />
@@ -22,6 +22,7 @@ export default function Blog({blog,handleBookmarks}) {
         <h2 className="text-sm md:text-4xl">{title}</h2>
         <div>
             <p className='flex gap-2 text-sm'>{hashtags.map((hashtag,index)=><span key={index} className=' text-xs'>{hashtag}</span>)}</p>
+            <h5 onClick={()=>{handleReadingtime( id , parseInt(reading_time))}} className="text-blue-500 underline cursor-pointer">Mark as read</h5>
         </div>
     </div>
   )

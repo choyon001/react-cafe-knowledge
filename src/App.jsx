@@ -5,6 +5,14 @@ import Bookmarks from './components/Bookmarks/Bookmarks'
 import { useState } from 'react'
 function App() {
   const [bookmarks,setBookmarks] = useState([]);
+  const [readingtime,setReadingtime] = useState(0);
+  const handleReadingtime = (id,time)=>{
+    setReadingtime(readingtime+time);
+
+    // removing bookmark 
+    const newBookmarks = bookmarks.filter(bookmark=> bookmark.id !== id);
+    setBookmarks(newBookmarks);
+  }
   
   const handleBookmarks = (blog)=>{
     setBookmarks([...bookmarks,blog]);
@@ -14,8 +22,8 @@ function App() {
     <>
     <Header></Header>
     <div className='w-11/12 mx-auto md:flex '>
-    <Blogs handleBookmarks = {handleBookmarks}></Blogs>
-    <Bookmarks bookmarks = {bookmarks}></Bookmarks>
+    <Blogs handleBookmarks = {handleBookmarks} handleReadingtime = {handleReadingtime}></Blogs>
+    <Bookmarks bookmarks = {bookmarks} readingtime = {readingtime}></Bookmarks>
     </div>
      
     </>
