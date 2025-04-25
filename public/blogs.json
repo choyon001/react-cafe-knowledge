@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://i.ibb.co.com/HDX85XKk/1.png",
+      "author_img": "https://i.ibb.co.com/LXZ8pB2g/boy1.png",
+      "author_name": "Jane Smith",
+      "published_date": "2025-04-20",
+      "reading_time": "3",
+      "title": "Why React Culture is Thriving in 2025",
+      "hashtags": ["#React", "#Lifestyle", "#Trends"]
+    },
+    {
+        "id": 2,
+        "cover_img": "https://i.ibb.co.com/Lz5bb1DG/2.png",
+        "author_img": "https://i.ibb.co.com/W4X8hr9B/boy2.jpg",
+        "author_name": "John Doe",
+        "published_date": "2025-04-18",
+        "reading_time": "5",
+        "title": "The Future of AI: What to Expect in the Next Decade",
+        "hashtags": ["#AI", "#Technology", "#Future"]
+      },
+    {
+      "id": 3,
+      "cover_img": "https://i.ibb.co.com/WNbh3bFd/3.jpg",
+      "author_img": "https://i.ibb.co.com/XfpczPNJ/girl1.jpg",
+      "author_name": "Alex Johnson",
+      "published_date": "2025-04-15",
+      "reading_time": "7",
+      "title": "10 JavaScript Tricks You Should Know",
+      "hashtags": ["#JavaScript", "#Coding", "#WebDev"]
+    },
+    {
+      "id": 4,
+      "cover_img": "https://i.ibb.co.com/hJv7F5kD/4.jpg",
+      "author_img": "https://i.ibb.co.com/RT8j3fkq/girl2.jpg",
+      "author_name": "Emily Carter",
+      "published_date": "2025-04-12",
+      "reading_time": "4",
+      "title": "How to Launch a Startup With Zero Budget",
+      "hashtags": ["#Startup", "#Entrepreneurship", "#BusinessTips"]
+    }
+  ]
+  
